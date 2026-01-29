@@ -7,7 +7,7 @@ Hardware used for testing:
 Samsung Galaxy A40 Android version 11 / API level 33
 Samsung Galaxy A6 Android Version 10 / API level 29
 
-Uses  performed in Exploratory Testing
+Uses cases performed in Exploratory Testing
 --------------------------------------
 -Internet good / low / no connectivity.
 -Different screen zoom setting.
