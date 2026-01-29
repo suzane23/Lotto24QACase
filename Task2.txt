@@ -5,7 +5,7 @@ Task 2: General QA and Bug Reporting
 Hardware used for testing:
 -------------------------
 Samsung Galaxy A40 Android version 11 / API level 33
-Samsung Galaxy A6 Android Version 10 / API level 31
+Samsung Galaxy A6 Android Version 10 / API level 29
 
 Uses  performed in Exploratory Testing
 --------------------------------------
@@ -55,12 +55,12 @@ Steps to reproduce:
 Expected Behavior: Lotto24 app must display a screen or pop up indicating No internet connection and must give the option to the user to Retry / check Network Settings. 
 Actual Behavior: Lotto24 app crashes without any further information to the user.
 
-Severity: Major 	Priority: Major
+Severity: Critical 	Priority: Critical
 Reproducibility: 100%
 
 Device Details:
 Samsung Galaxy A40 Android version 11 / API level 33
-Samsung Galaxy A6 Android Version 10 / API level 31
+Samsung Galaxy A6 Android Version 10 / API level 29
 
 App Version: 1.0 (debug variant)
-** Logs and screenshot attached**‚
+** Logs and screenshot attached in logs_screenshot folder for each device **‚
