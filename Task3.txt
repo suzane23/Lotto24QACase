@@ -1,0 +1,65 @@
+Task 3: UI/UX and Usability Review
+
+Hardware used for testing:
+------------------------- 
+Samsung Galaxy A40 Android version 11 / API level 33
+Samsung Galaxy A6 Android Version 10 / API level 29
+
+First Impressions & Onboarding: 
+------------------------------- 
+To anyone using the lottery app for long the screen looks good as he/ she knows already what is this about but for a new user looks like it landed in the middle of no where.
+Here are my insights and suggestions.
+
+1.There’s no indication of what is shown on the screen. A simple header would be helpful for example: “Recent Draw Results”.
+2.For new users, it’s not obvious what these numbers mean. Are these winning numbers?Are they my selected numbers? Are the red numbers special or prohibited? A small label would help
+	 ● Main Numbers  ● Super Number
+3.In the section of the date of next draw a time stamp HH:MM would make the section more accurate and worthy.
+4.A simple onboarding help guide (Tutorial ) with Skip button at the first launch of the app would be good to have. 
+5.When the app is launched or restarted at first a white screen is displayed for the first few seconds. The screen can instead display a spinner with simple text indicating the results of saved lotteries are loading.
+
+
+Visual Polish & Consistency: 
+---------------------------
+
+The UI is overall simple and with minimal color usage. The font size / color of numbers are consistent. I found the below inconsistencies and problems with color usage.
+
+Inconsistency Found	
+-------------------
+
+1.On the default screen zoom/ text font setting off the test hardware( mentioned above) the last number in the row of numbers is cut out and the circle is flattened on the sides indicating the row is not adaptive to screen.
+2.The Lottery Names are displayed as simple text in grey.
+3.The last draw date is left aligned and the next draw date is right aligned with the default text font size setting on the phone. When the text font size is increased both the dates are aligned to the left.
+4.There is too much empty space in each lottery section.
+5.Red color used for super number does not match the overall color usage of app. Moreover looking at a number in red gives kind of a negative impact to the user.
+
+In my opinion the following could be some suggestions to increase consistency. 
+
+Color Usage
+-----------
+The main numbers can be displayed in light grey color and the super number in dark grey or black.
+The Lottery name must be displayed in the same fonts and color scheme as on LOTTO24 website to emphasise authenticity. 
+
+Screen Alignment
+----------------
+The numbers row must be made adaptive to screen size so that all the numbers are displayed correctly in the available screen width and font size.
+The last draw date can be right aligned in the same line to the lottery name 
+
+Other Changes
+--------------
+1.The circles can be replaced with squares making it easier to increase the font of numbers, making their visibility more impactful.
+2.A simple text highlight can be added in the space now available on the top to indicate the Main Numbers and Super Numbers.
+3.The bottom section as used currently for Next draw date can be enhanced by adding the exact  time in HH:MM format. The color scheme need not be changed.
+4.The white screen displayed at start can instead display a spinner with simple text indicating the results of saved lotteries are loading to increase user engagement.
+5.A horizontal scroller can be added when the screen is in landscape mode.
+
+Error States & Edge Cases:
+---------------------------
+
+In case the app fails to load data from the network,  the app must not crash/reset/ force close but  show a kind of no blame screen clearly explaining what happened, what can be done to resolve the issue and reassuring that the user has lost any important data.
+
+I designed one such screen and is attached. NetworkError.png
+
+I think the screen is self explanatory. The following are the ideas behind the design:- 
+-NO Bold RED colour which can scare the user. 
+-The option to contact support gives the user a kind of reassurance that he can reach out the team anytime.
+-Text indicating a temporary hiccup, reassure nothing serious has happened and the user can try after sometime.

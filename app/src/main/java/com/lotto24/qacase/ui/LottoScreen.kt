@@ -16,6 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -47,7 +48,7 @@ fun LottoScreen(
 @Composable
 fun LottoResultItem(lotto: LottoDomain) {
     Card(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier.fillMaxWidth().testTag(LotteryComposeUITags.LOTTERY_ITEM_TAG),
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
         colors = CardDefaults.cardColors(containerColor = Color.White)
     ) {
@@ -59,7 +60,8 @@ fun LottoResultItem(lotto: LottoDomain) {
                 text = lotto.lottery.uppercase(),
                 style = MaterialTheme.typography.headlineSmall,
                 fontWeight = FontWeight.Bold,
-                color = Color.Gray
+                color = Color.Gray,
+                modifier = Modifier.testTag(LotteryComposeUITags.LOTTERY_TAG)
             )
 
             Spacer(modifier = Modifier.height(8.dp))
@@ -67,7 +69,8 @@ fun LottoResultItem(lotto: LottoDomain) {
             Text(
                 text = "Last Draw: ${DateFormatter.format(lotto.lastDrawDate)}",
                 style = MaterialTheme.typography.bodyLarge,
-                fontWeight = FontWeight.SemiBold
+                fontWeight = FontWeight.SemiBold,
+                modifier = Modifier.testTag(LotteryComposeUITags.LOTTERY_LAST_DRAW_TAG)
             )
 
             Spacer(modifier = Modifier.height(16.dp))
@@ -75,20 +78,30 @@ fun LottoResultItem(lotto: LottoDomain) {
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(vertical = 8.dp),
+                    .padding(vertical = 8.dp)
+                    .testTag(LotteryComposeUITags.LOTTERY_NUMBERS_ROW_TAG),
                 horizontalArrangement = Arrangement.Center,
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 lotto.numbers.forEach { number ->
-                    NumberCircle(number = number.toString())
+                    NumberCircle(
+                        number = number.toString(),
+                        modifier = Modifier.testTag(LotteryComposeUITags.LOTTERY_NUMBER_TAG)
+                    )
                     Spacer(modifier = Modifier.width(8.dp))
                 }
 
                 lotto.superNumber.forEach { number ->
                     if (lotto.isEuroJackpot) {
-                        NumberCircle(number = number.toString())
+                        NumberCircle(
+                            number = number.toString(),
+                            modifier = Modifier.testTag(LotteryComposeUITags.LOTTERY_NUMBER_TAG)
+                        )
                     } else {
-                        SuperNumberCircle(number = number.toString())
+                        SuperNumberCircle(
+                            number = number.toString(),
+                            modifier = Modifier.testTag(LotteryComposeUITags.LOTTERY_SUPER_NUMBER_TAG)
+                        )
                     }
                     Spacer(modifier = Modifier.width(8.dp))
                 }
@@ -98,16 +111,16 @@ fun LottoResultItem(lotto: LottoDomain) {
             Text(
                 text = "Next Draw: ${DateFormatter.format(lotto.nextDrawDate)}",
                 style = MaterialTheme.typography.bodyLarge,
-                modifier = Modifier.align(Alignment.End)
+                modifier = Modifier.align(Alignment.End).testTag(LotteryComposeUITags.LOTTERY_NEXT_DRAW_TAG)
             )
         }
     }
 }
 
 @Composable
-fun NumberCircle(number: String) {
+fun NumberCircle(number: String, modifier: Modifier = Modifier) {
     Box(
-        modifier = Modifier
+        modifier = modifier
             .size(40.dp)
             .clip(CircleShape)
             .background(Color.DarkGray),
@@ -123,9 +136,9 @@ fun NumberCircle(number: String) {
 }
 
 @Composable
-fun SuperNumberCircle(number: String) {
+fun SuperNumberCircle(number: String, modifier: Modifier = Modifier) {
     Box(
-        modifier = Modifier
+        modifier = modifier
             .size(40.dp)
             .clip(CircleShape)
             .background(Color.Red),

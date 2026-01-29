@@ -1,0 +1,66 @@
+Task 2: General QA and Bug Reporting
+====================================
+
+
+Hardware used for testing:
+-------------------------
+Samsung Galaxy A40 Android version 11 / API level 33
+Samsung Galaxy A6 Android Version 10 / API level 31
+
+Uses  performed in Exploratory Testing
+--------------------------------------
+-Internet good / low / no connectivity.
+-Different screen zoom setting.
+-Different text Font settings.
+-Hearing accessibility with Screen reader functionality.
+-Portrait / landscape mode.
+-Visibility enhancements.
+-Manual Force close / restart
+-Localization testing
+
+Bugs Found
+----------
+
+1.NO internet Crash: App crashes when launched in no internet / offline state.
+
+2.Text Font Issue: When the text font size is increased the dates of last draw and next draw are left aligned,
+while otherwise for default font size last draw date is left aligned and next draw date is right aligned.
+
+3.Screen zoom issue: When screen zoom is set to the lowest value possible, only then I can see all the numbers in row completely.
+As the zoom is increased the circles displaying numbers in the end start shrinking from sides and look more oval then as a circle.
+With screen zoom set to maximum, the circle displaying the super number / last number is completely off the screen display and the
+circle before starts turning oval. If in case it displays a two digit number the number is displayed up and down.
+
+4.Language issue: When language is changed to German only the date is shown in German language. Last Draw and next draw date text are still in English.
+
+5.Low Internet Connectivity: When Internet connectivity is low a white screen is observed at the start (launched afresh or restarted).
+
+6.Auto Rotate: When Auto-rotate is ON, and the app is displayed in landscape mode there is no horizontal scroller visible on the right
+leaving the user unaware that there is another card above or below.
+
+
+Detailed Bug Report for Issue 1 
+===============================
+
+Title: App crashes when launched in offline state / without internet
+
+
+Steps to reproduce:
+-------------------
+
+1. Disable mobile data and Wifi Connection on the device.
+2. Wait until the device loses  network connectivity completely.
+3. Launch the Lotto24 app.
+
+Expected Behavior: Lotto24 app must display a screen or pop up indicating No internet connection and must give the option to the user to Retry / check Network Settings. 
+Actual Behavior: Lotto24 app crashes without any further information to the user.
+
+Severity: Major 	Priority: Major
+Reproducibility: 100%
+
+Device Details:
+Samsung Galaxy A40 Android version 11 / API level 33
+Samsung Galaxy A6 Android Version 10 / API level 31
+
+App Version: 1.0 (debug variant)
+** Logs and screenshot attached**‚

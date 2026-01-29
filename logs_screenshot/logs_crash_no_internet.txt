@@ -1,0 +1,81 @@
+---------------------------- PROCESS STARTED (30518) for package com.lotto24.qacase ----------------------------
+2026-01-29 22:51:27.721 30518-30518 ActivityThread          com.lotto24.qacase                   W  handleWindowVisibility: no activity for token android.os.BinderProxy@2a14d37
+2026-01-29 22:51:27.890 30518-30518 PhoneWindow             com.lotto24.qacase                   D  forceLight changed to true [] from com.android.internal.policy.PhoneWindow.updateForceLightNavigationBar:4238 com.android.internal.policy.DecorView.updateColorViews:1510 com.android.internal.policy.PhoneWindow.dispatchWindowAttributesChanged:3216 android.view.Window.setFlags:1148 com.android.internal.policy.PhoneWindow.generateLayout:2444
+2026-01-29 22:51:27.892 30518-30518 MultiWindowDecorSupport com.lotto24.qacase                   I  updateCaptionType >> DecorView@5111e9c[], isFloating: false, isApplication: true, hasWindowDecorCaption: false, hasWindowControllerCallback: true
+2026-01-29 22:51:27.892 30518-30518 MultiWindowDecorSupport com.lotto24.qacase                   D  setCaptionType = 0, DecorView = DecorView@5111e9c[]
+2026-01-29 22:51:28.003 30518-30518 ViewRootIm...nActivity] com.lotto24.qacase                   D  setView = com.android.internal.policy.DecorView@5111e9c TM=true MM=false
+2026-01-29 22:51:28.911 30518-30518 NetworkSecurityConfig   com.lotto24.qacase                   D  No Network Security Config specified, using platform default
+2026-01-29 22:51:28.954 30518-30518 .lotto24.qacas          com.lotto24.qacase                   W  Accessing hidden method Ldalvik/system/CloseGuard;->get()Ldalvik/system/CloseGuard; (greylist,core-platform-api, reflection, allowed)
+2026-01-29 22:51:28.954 30518-30518 .lotto24.qacas          com.lotto24.qacase                   W  Accessing hidden method Ldalvik/system/CloseGuard;->open(Ljava/lang/String;)V (greylist,core-platform-api, reflection, allowed)
+2026-01-29 22:51:28.954 30518-30518 .lotto24.qacas          com.lotto24.qacase                   W  Accessing hidden method Ldalvik/system/CloseGuard;->warnIfOpen()V (greylist,core-platform-api, reflection, allowed)
+2026-01-29 22:51:29.264 30518-30518 .lotto24.qacas          com.lotto24.qacase                   W  Accessing hidden method Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl; (greylist, reflection, allowed)
+2026-01-29 22:51:29.264 30518-30518 .lotto24.qacas          com.lotto24.qacase                   W  Accessing hidden field Landroid/view/View$AttachInfo;->mVisibleInsets:Landroid/graphics/Rect; (greylist, reflection, allowed)
+2026-01-29 22:51:29.265 30518-30518 .lotto24.qacas          com.lotto24.qacase                   W  Accessing hidden field Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo; (greylist, reflection, allowed)
+2026-01-29 22:51:29.314 30518-30518 ViewRootIm...nActivity] com.lotto24.qacase                   D  Relayout returned: old=(0,0,720,1480) new=(0,0,720,1480) req=(720,1480)0 dur=15 res=0x7 s={true 3596347392} ch=true
+2026-01-29 22:51:29.315 30518-30555 OpenGLRenderer          com.lotto24.qacase                   D  createReliableSurface : 0xd6656e00, 0xd65be800
+2026-01-29 22:51:29.335 30518-30555 mali_winsys             com.lotto24.qacase                   D  EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+2026-01-29 22:51:29.361 30518-30555 Gralloc3                com.lotto24.qacase                   W  mapper 3.x is not supported
+2026-01-29 22:51:29.364 30518-30555 gralloc                 com.lotto24.qacase                   I  Arm Module v1.0
+2026-01-29 22:51:29.373 30518-30518 Choreographer           com.lotto24.qacase                   I  Skipped 69 frames!  The application may be doing too much work on its main thread.
+2026-01-29 22:51:29.389  3354-3398  WindowManager           system_server                        E  win=Window{d39ebcb u0 Splash Screen com.lotto24.qacase EXITING} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.AppWindowToken.destroySurfaces:1200 com.android.server.wm.AppWindowToken.destroySurfaces:1181 com.android.server.wm.WindowState.onExitAnimationDone:5030 com.android.server.wm.WindowStateAnimator.onAnimationFinished:287 com.android.server.wm.WindowState.onAnimationFinished:5471 com.android.server.wm.-$$Lambda$yVRF8YoeNdTa8GR1wDStVsHu8xM.run:2 com.android.server.wm.SurfaceAnimator.lambda$getFinishedCallback$0$SurfaceAnimator:100
+2026-01-29 22:51:29.483 30518-30518 ViewRootIm...nActivity] com.lotto24.qacase                   D  MSG_WINDOW_FOCUS_CHANGED 1 1
+2026-01-29 22:51:29.484 30518-30518 InputMethodManager      com.lotto24.qacase                   D  prepareNavigationBarInfo() DecorView@5111e9c[MainActivity]
+2026-01-29 22:51:29.484 30518-30518 InputMethodManager      com.lotto24.qacase                   D  getNavigationBarColor() -855310
+2026-01-29 22:51:29.488 30518-30518 InputMethodManager      com.lotto24.qacase                   D  prepareNavigationBarInfo() DecorView@5111e9c[MainActivity]
+2026-01-29 22:51:29.488 30518-30518 InputMethodManager      com.lotto24.qacase                   D  getNavigationBarColor() -855310
+2026-01-29 22:51:29.488 30518-30518 InputMethodManager      com.lotto24.qacase                   V  Starting input: tba=com.lotto24.qacase ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+2026-01-29 22:51:29.489 30518-30518 InputMethodManager      com.lotto24.qacase                   D  startInputInner - Id : 0
+2026-01-29 22:51:29.489 30518-30518 InputMethodManager      com.lotto24.qacase                   I  startInputInner - mService.startInputOrWindowGainedFocus
+2026-01-29 22:51:29.493 30518-30518 ViewRootIm...nActivity] com.lotto24.qacase                   D  MSG_RESIZED: frame=(0,0,720,1480) ci=(0,48,0,96) vi=(0,48,0,96) or=1
+2026-01-29 22:51:29.499 30518-30518 InputMethodManager      com.lotto24.qacase                   D  prepareNavigationBarInfo() DecorView@5111e9c[MainActivity]
+2026-01-29 22:51:29.499 30518-30518 InputMethodManager      com.lotto24.qacase                   D  getNavigationBarColor() -855310
+2026-01-29 22:51:29.499 30518-30518 InputMethodManager      com.lotto24.qacase                   V  Starting input: tba=com.lotto24.qacase ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+2026-01-29 22:51:29.500 30518-30518 InputMethodManager      com.lotto24.qacase                   D  startInputInner - Id : 0
+2026-01-29 22:51:33.944 30518-30635 ProfileInstaller        com.lotto24.qacase                   D  Installing profile for com.lotto24.qacase
+2026-01-29 22:51:39.099 30518-30518 AndroidRuntime          com.lotto24.qacase                   E  FATAL EXCEPTION: main
+Process: com.lotto24.qacase, PID: 30518
+2026-01-29 22:51:39.155 30518-30518 Process                 com.lotto24.qacase                   I  Sending signal. PID: 30518 SIG: 9
+---------------------------- PROCESS ENDED (30518) for package com.lotto24.qacase ----------------------------
+2026-01-29 22:51:39.297  3354-3522  InputDispatcher         system_server                        E  channel '34be3b5 com.lotto24.qacase/com.lotto24.qacase.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+2026-01-29 22:51:39.304  3354-3531  WindowManager           system_server                        E  win=Window{34be3b5 u0 com.lotto24.qacase/com.lotto24.qacase.MainActivity EXITING} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.AppWindowToken.destroySurfaces:1200 com.android.server.wm.AppWindowToken.destroySurfaces:1181 com.android.server.wm.WindowState.onExitAnimationDone:5030 com.android.server.wm.-$$Lambda$01bPtngJg5AqEoOWfW3rWfV7MH4.accept:2 java.util.ArrayList.forEach:1262 com.android.server.wm.AppWindowToken.onAnimationFinished:3549 com.android.server.wm.AppWindowToken.commitVisibility:860
+---------------------------- PROCESS STARTED (30712) for package com.lotto24.qacase ----------------------------
+2026-01-29 22:51:46.794 30712-30712 ActivityThread          com.lotto24.qacase                   W  handleWindowVisibility: no activity for token android.os.BinderProxy@2a14d37
+2026-01-29 22:51:46.965 30712-30712 PhoneWindow             com.lotto24.qacase                   D  forceLight changed to true [] from com.android.internal.policy.PhoneWindow.updateForceLightNavigationBar:4238 com.android.internal.policy.DecorView.updateColorViews:1510 com.android.internal.policy.PhoneWindow.dispatchWindowAttributesChanged:3216 android.view.Window.setFlags:1148 com.android.internal.policy.PhoneWindow.generateLayout:2444
+2026-01-29 22:51:46.967 30712-30712 MultiWindowDecorSupport com.lotto24.qacase                   I  updateCaptionType >> DecorView@5111e9c[], isFloating: false, isApplication: true, hasWindowDecorCaption: false, hasWindowControllerCallback: true
+2026-01-29 22:51:46.967 30712-30712 MultiWindowDecorSupport com.lotto24.qacase                   D  setCaptionType = 0, DecorView = DecorView@5111e9c[]
+2026-01-29 22:51:47.082 30712-30712 ViewRootIm...nActivity] com.lotto24.qacase                   D  setView = com.android.internal.policy.DecorView@5111e9c TM=true MM=false
+2026-01-29 22:51:47.997 30712-30712 NetworkSecurityConfig   com.lotto24.qacase                   D  No Network Security Config specified, using platform default
+2026-01-29 22:51:48.043 30712-30712 .lotto24.qacas          com.lotto24.qacase                   W  Accessing hidden method Ldalvik/system/CloseGuard;->get()Ldalvik/system/CloseGuard; (greylist,core-platform-api, reflection, allowed)
+2026-01-29 22:51:48.043 30712-30712 .lotto24.qacas          com.lotto24.qacase                   W  Accessing hidden method Ldalvik/system/CloseGuard;->open(Ljava/lang/String;)V (greylist,core-platform-api, reflection, allowed)
+2026-01-29 22:51:48.043 30712-30712 .lotto24.qacas          com.lotto24.qacase                   W  Accessing hidden method Ldalvik/system/CloseGuard;->warnIfOpen()V (greylist,core-platform-api, reflection, allowed)
+2026-01-29 22:51:48.354 30712-30712 .lotto24.qacas          com.lotto24.qacase                   W  Accessing hidden method Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl; (greylist, reflection, allowed)
+2026-01-29 22:51:48.354 30712-30712 .lotto24.qacas          com.lotto24.qacase                   W  Accessing hidden field Landroid/view/View$AttachInfo;->mVisibleInsets:Landroid/graphics/Rect; (greylist, reflection, allowed)
+2026-01-29 22:51:48.354 30712-30712 .lotto24.qacas          com.lotto24.qacase                   W  Accessing hidden field Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo; (greylist, reflection, allowed)
+2026-01-29 22:51:48.403 30712-30712 ViewRootIm...nActivity] com.lotto24.qacase                   D  Relayout returned: old=(0,0,720,1480) new=(0,0,720,1480) req=(720,1480)0 dur=17 res=0x7 s={true 3596466176} ch=true
+2026-01-29 22:51:48.405 30712-30750 OpenGLRenderer          com.lotto24.qacase                   D  createReliableSurface : 0xec3d3440, 0xd65db800
+2026-01-29 22:51:48.424 30712-30750 mali_winsys             com.lotto24.qacase                   D  EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+2026-01-29 22:51:48.449 30712-30750 Gralloc3                com.lotto24.qacase                   W  mapper 3.x is not supported
+2026-01-29 22:51:48.452 30712-30750 gralloc                 com.lotto24.qacase                   I  Arm Module v1.0
+2026-01-29 22:51:48.460 30712-30712 Choreographer           com.lotto24.qacase                   I  Skipped 69 frames!  The application may be doing too much work on its main thread.
+2026-01-29 22:51:48.481  3354-3398  WindowManager           system_server                        E  win=Window{71bedfe u0 Splash Screen com.lotto24.qacase EXITING} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.AppWindowToken.destroySurfaces:1200 com.android.server.wm.AppWindowToken.destroySurfaces:1181 com.android.server.wm.WindowState.onExitAnimationDone:5030 com.android.server.wm.WindowStateAnimator.onAnimationFinished:287 com.android.server.wm.WindowState.onAnimationFinished:5471 com.android.server.wm.-$$Lambda$yVRF8YoeNdTa8GR1wDStVsHu8xM.run:2 com.android.server.wm.SurfaceAnimator.lambda$getFinishedCallback$0$SurfaceAnimator:100
+2026-01-29 22:51:48.575 30712-30712 ViewRootIm...nActivity] com.lotto24.qacase                   D  MSG_WINDOW_FOCUS_CHANGED 1 1
+2026-01-29 22:51:48.575 30712-30712 InputMethodManager      com.lotto24.qacase                   D  prepareNavigationBarInfo() DecorView@5111e9c[MainActivity]
+2026-01-29 22:51:48.575 30712-30712 InputMethodManager      com.lotto24.qacase                   D  getNavigationBarColor() -855310
+2026-01-29 22:51:48.580 30712-30712 InputMethodManager      com.lotto24.qacase                   D  prepareNavigationBarInfo() DecorView@5111e9c[MainActivity]
+2026-01-29 22:51:48.580 30712-30712 InputMethodManager      com.lotto24.qacase                   D  getNavigationBarColor() -855310
+2026-01-29 22:51:48.580 30712-30712 InputMethodManager      com.lotto24.qacase                   V  Starting input: tba=com.lotto24.qacase ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+2026-01-29 22:51:48.580 30712-30712 InputMethodManager      com.lotto24.qacase                   D  startInputInner - Id : 0
+2026-01-29 22:51:48.580 30712-30712 InputMethodManager      com.lotto24.qacase                   I  startInputInner - mService.startInputOrWindowGainedFocus
+2026-01-29 22:51:48.584 30712-30712 ViewRootIm...nActivity] com.lotto24.qacase                   D  MSG_RESIZED: frame=(0,0,720,1480) ci=(0,48,0,96) vi=(0,48,0,96) or=1
+2026-01-29 22:51:48.591 30712-30712 InputMethodManager      com.lotto24.qacase                   D  prepareNavigationBarInfo() DecorView@5111e9c[MainActivity]
+2026-01-29 22:51:48.591 30712-30712 InputMethodManager      com.lotto24.qacase                   D  getNavigationBarColor() -855310
+2026-01-29 22:51:48.591 30712-30712 InputMethodManager      com.lotto24.qacase                   V  Starting input: tba=com.lotto24.qacase ic=null mNaviBarColor -855310 mIsGetNaviBarColorSuccess true , NavVisible : true , NavTrans : false
+2026-01-29 22:51:48.591 30712-30712 InputMethodManager      com.lotto24.qacase                   D  startInputInner - Id : 0
+2026-01-29 22:51:52.924 30712-30772 ProfileInstaller        com.lotto24.qacase                   D  Installing profile for com.lotto24.qacase
+2026-01-29 22:51:58.189 30712-30712 AndroidRuntime          com.lotto24.qacase                   E  FATAL EXCEPTION: main
+Process: com.lotto24.qacase, PID: 30712
+2026-01-29 22:51:58.409  2940-2940  SurfaceFlinger          surfaceflinger                       E  [Application Error: com.lotto24.qacase#0] rejecting buffer: bufWidth=728, bufHeight=424, front.active_legacy.{w=728, h=388}
+2026-01-29 22:51:58.412  2940-3009  BufferQueueProducer     surfaceflinger                       E  [Application Error: com.lotto24.qacase#0] disconnect: not connected (req=1)
+2026-01-29 22:52:00.631  2940-4168  BufferQueueProducer     surfaceflinger                       E  [Application Error: com.lotto24.qacase#0] disconnect: not connected (req=1)
+2026-01-29 22:52:00.647  3354-6050  InputDispatcher         system_server                        E  Window handle Window{9ccbd5c u0 Application Error: com.lotto24.qacase} has no registered input channel
+---------------------------- PROCESS ENDED (30712) for package com.lotto24.qacase ----------------------------
